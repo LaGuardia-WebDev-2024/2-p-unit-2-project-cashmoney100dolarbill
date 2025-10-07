@@ -1,7 +1,7 @@
 <!--Unit 2 Project
 Requirements
 [  ] Two Element Selectors
-[  ] Two ID Selectors
+[ x ] Two ID Selectors
 [ x ] Two Class Selectors
 [ x ] Three Images
 
@@ -19,28 +19,49 @@ Select ONE Additional Feature to Add
         <meta charset="utf-8">
         <title>Unit 2 Project</title>
         <style>
-            .Cotwswolds {
-                background-color: forestgreen;
-                color: white;
+            body{
+                background-image: url(https://i.pinimg.com/1200x/4d/1d/bb/4d1dbbfef3d7473040c9f16f56624dc3.jpg)
+            }
+            body {
+                color: white
+            }
+            .Cotwswolds, html {
+                animation: colorChange 3s infinite alternate;
+            }
+
+            .Cotwswolds @keyframes colorChange {
+                0%{background-color: green;}
+                100%{background-color: aquamarine;}
             }
             .Gothic {
                 background-color: rgb(95, 43, 0);
-                color: white;
             }
             .Graffiti {
                 background-color: rgb(255, 200, 61);
-                color: white;
             }
             .TA {
                 background-color: rgb(131, 214, 214);
-                  color: white;
             }
             .Bikers {
                 background-color: black;
-                  color: white;
             }
             #statues{
                 background-color: gray;
+            }
+            #Cotswolds{
+                background-color: green;
+            }
+            #Gothic{
+                background-color: rgb(95, 43, 0);
+            }
+            #Graffiti{
+                background-color: rgb(255, 200, 61);
+            }
+            #TA{
+                background-color: rgb(131, 214, 214);
+            }
+            #Bikers {
+                background-color: black;
             }
         </style>
     </head>
@@ -49,42 +70,53 @@ Select ONE Additional Feature to Add
         <h1> Trip to the United Kingdom on Camera</h1>
         <h4> By Cassius Klier</h4>
 
+        <div id="Cotswolds">
         <p class="Cotswolds">Cotswolds<p>
             
         <img src="IMG_3651 - Copy.JPG" width="250">
         <img src="IMG_3667.JPG" width="250">
         <img src="IMG_3695.JPG" width="250">
         <img src="IMG_3690.JPG" width="250">
-      
-        <h5>All of these photos were taken in the rural country side of Britain, the Cotswolds. In which Me, my Mom and Brother all hiked through for 3 days</h5>
+       
 
+        <h5>All of these photos were taken in the rural country side of Britain, the Cotswolds. In which Me, my Mom and Brother all hiked through for 3 days</h5>
+        </div>
 
         <div id="statues">
         <p class="Statues">Statues</p>
 
         <img src="IMG_3509.JPG" width="250">
         <img src="IMG_3526.jpg" width="250">
-        <h10 class="Statues">Both of these photos are of different figures in sculpture form. One of the statues is of the Duke of Wellington, and the other being the gold statue at St Paul's Cathedral</h10>
+        <h5 class="Statues">Both of these photos are of different figures in sculpture form. One of the statues is of the Duke of Wellington, and the other being the gold statue at St Paul's Cathedral</h5>
         </div>
+
+        <div id="Gothic"> 
         <p class="Gothic">Gothic styled buildings</p>
         <img src="IMG_3541.JPG" width="250">
         <img src="IMG_3810.JPG" width="250">
-        <h10 class="Gothic">These photos are of older London architecture. The first photo is of the Royal College of Music and the other was taken in the heart of London. </h10>
-       
+        <h5 class="Gothic">These photos are of older London architecture. The first photo is of the Royal College of Music and the other was taken in the heart of London. </h5>
+       </div>
+
+        <div id="Graffiti">
         <p class="Graffiti">Graffiti</p>
         <img src="IMG_3246.JPG" width="250">
         <img src="IMG_3252.JPG" width="250">
+        </div>
 
+        <div id="TA">
         <p class="TA">Tourist attractions</p>
          <img src="IMG_3815.JPG" width="250">
          <img src="IMG_3163.JPG" width="250">
          <img src="IMG_31723.jpg" width="250">
          <img src="IMG_3159.JPG" width="250">
+         </div>
 
+        <div id=Bikers>
         <p class="Bikers">Bikers</p>
         <img src="IMG_3229.JPG" width="250">
         <img src="IMG_3749.JPG" width="250">
-       
+        </div>
+
     </body>
 </html>
 
