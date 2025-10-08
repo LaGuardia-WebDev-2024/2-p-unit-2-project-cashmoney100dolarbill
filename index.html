@@ -8,8 +8,8 @@ Requirements
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include Border Radius CSS Property 
 [ no ] Feature 2 - Include a Static Background Image
-[ no ] Feature 3 - Include An Animated Background Color Change
-[ no ] Feature 4 - Embed YouTube Video 
+[ yes ] Feature 3 - Include An Animated Background Color Change
+[ yes ] Feature 4 - Embed YouTube Video 
 [ no ] Feature 5 - Include Border CSS Property 
 -->
     
@@ -24,6 +24,14 @@ Select ONE Additional Feature to Add
             }
             body {
                 color: white
+            }
+            body, html{
+                animation: colorchange 3s infinite
+                alternate;
+            }
+            @keyframes colorChange{
+                0%{background-color: red}
+                100%{background-color: blue}
             }
            .Cotswolds{
                 color:rgb(255, 220, 226)
@@ -64,6 +72,12 @@ Select ONE Additional Feature to Add
         </style>
     </head>
     <body>
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/DNygaJ60Sbo?si=bzP7Etsr78WJssOZ" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
     
         <h1> Trip to the United Kingdom on Camera</h1>
         <h4> By Cassius Klier</h4>
@@ -113,6 +127,10 @@ Select ONE Additional Feature to Add
         <img src="IMG_3749.JPG" width="250">
         <h5 class="Bikers"> Both photos place strong visual emphasis on the cyclist, making them the central subject of the composition. The framing, perspective, and focus all work together to draw the viewer’s attention directly to the rider.</h5>
         </div>
+
+        <p> YouTube Video!!! </p>
+
+        <p>https://youtu.be/DNygaJ60Sbo</p>
 
     </body>
 </html>
